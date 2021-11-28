@@ -1,14 +1,14 @@
 /*
   Projet minishell - Licence 3 Info - PSI 2021
- 
+
   Nom :
   Prénom :
   Num. étudiant :
   Groupe de projet :
   Date :
- 
+
   Gestion des processus (headers).
- 
+
  */
 
 #ifndef PROCESSUS_H
@@ -24,7 +24,7 @@ typedef struct process_t {
   int fdclose[2]; // Éventuels descripteurs à fermer
   int status; // Status du processus (pour waitpid())
   int bg;  // Lancer la commande en arrière plan ?
-  
+
   struct process_t* next; // Prochaine commande inconditionnelle
   struct process_t* next_failure; // Prochaine en cas d'échec
   struct process_t* next_success; // Prochaine en cas de succés

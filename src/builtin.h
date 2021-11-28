@@ -1,14 +1,14 @@
 /*
   Projet minishell - Licence 3 Info - PSI 2021
- 
-  Nom :
-  Prénom :
-  Num. étudiant :
+
+  Nom : AZACRI
+  Prénom : Ayoub
+  Num. étudiant : 22114660
   Groupe de projet :
   Date :
- 
+
   Gestion des commandes internes du minishell (headers).
- 
+
  */
 
 #ifndef BUILTIN_H
