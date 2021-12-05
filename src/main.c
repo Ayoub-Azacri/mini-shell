@@ -1,14 +1,11 @@
 /*
   Projet minishell - Licence 3 Info - PSI 2021
-
-  Nom :
-  Prénom :
-  Num. étudiant :
-  Groupe de projet :
-  Date :
-
+  Nom : AZACRI - BENMOUMEN - LOUDAGH
+  Prénom : Ayoub - Reda - Ali
+  Num. étudiant : 22114660 - 22113231 - 22114007
+  Groupe de projet : 27
+  Date : 5/12/2021
   Interface du minishell.
-
  */
 
 
@@ -138,4 +135,3 @@ launch_cmd(cmds);
 
 return -1;
 }
-

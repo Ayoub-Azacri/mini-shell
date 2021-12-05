@@ -8,7 +8,8 @@ FONCTIONNALITÉS IMPLÉMENTÉES DANS NOTRE PROJET MINISHELL-2021 :
 7. Tuyaux « | » (multiple) (Ex : ls | grep 'a' | wc)
 8. Multiple command avec ";"  ( EX : echo test ; ls -l ; clear)
 9. Gérer le signal d'interruption : en appuyant sur « Ctrl+C », la commande en cours d'exécution doit être terminée, votre programme ne doit pas se terminer.
-10. Exécution de la commande en arrière-plan avec le signe '&' ( EX : ls -l & )
+10. Pour quitter le terminal, il faut saisir "exit".
+11. Exécution de la commande en arrière-plan avec le signe '&' ( EX : ls -l & )
 
 # execution de minishell
 1.
