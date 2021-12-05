@@ -1,10 +1,10 @@
 /*
   Projet minishell - Licence 3 Info - PSI 2021
 
-  Nom :
-  Prénom :
-  Num. étudiant :
-  Groupe de projet :
+  Nom : AZACRI - BENMOUMEN - LOUDAGH
+  Prénom : Ayoub - Reda - Ali
+  Num. étudiant : 22114660
+  Groupe de projet : 27
   Date :
 
   Gestion des processus (headers).
@@ -14,6 +14,8 @@
 #ifndef PROCESSUS_H
 #define PROCESSUS_H
 
+#define MAX_LINE_SIZE 1024
+#define MAX_CMD_SIZE 256
 #include <unistd.h>
 
 typedef struct process_t {

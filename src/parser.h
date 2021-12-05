@@ -1,14 +1,14 @@
 /*
   Projet minishell - Licence 3 Info - PSI 2021
- 
-  Nom :
-  Prénom :
-  Num. étudiant :
-  Groupe de projet :
+
+  Nom : AZACRI - BENMOUMEN - LOUDAGH
+  Prénom : Ayoub - Reda - Ali
+  Num. étudiant : 22114660
+  Groupe de projet : 27
   Date :
- 
+
   Parsing de la ligne de commandes utilisateur (headers).
- 
+
  */
 
 #ifndef PARSER_H
@@ -24,10 +24,12 @@
 // Effacer un tableau (tout mettre à zéro)
 #define CLEAR(ptr, size) memset((ptr), 0, (size)*sizeof(*ptr))
 
-int trim(char* str);
-int clean(char* str);
-int tokenize(char* str, char* tokens[]);
+int trim(char * str);
+int clean(char * str);
+char ** tokenize(char * str);
+void print_array (char ** strings);
 
-int is_reserved(const char* tok);
-int parse_cmd(char* tokens[], process_t* commands);
+/*int is_reserved(const char* tok);*/
+int is_reserved ( char * tok);
+int parse_cmd(char ** tokens, process_t* commands);
 #endif

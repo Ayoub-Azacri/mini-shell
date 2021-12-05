@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.html": "twig",
+        "unistd.h": "c",
+        "assert.h": "c"
+    }
+}
