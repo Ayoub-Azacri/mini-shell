@@ -70,59 +70,44 @@ int is_builtin(const char* cmd) {
 
 int builtin(process_t* proc) {
 
-        if (proc->argv[0] != NULL)
-            {
+  if (proc->argv[0] != NULL){
 
-            if (strcmp(proc->argv[0], "exit") == 0)
-                  exit_shell(1,1);
-            if (strcmp(proc->argv[0], "echo") == 0)
-                    {
-                      if(proc->argv[1]==NULL){
-                          printf("provide an argument for echo\n");
-                          return 1;
-                      }
-
-                       echo(proc->argv[1]);
-                        return 1;
-
-
-                    }
-
-                     if (strcmp(proc->argv[0], "export") == 0)
-                    {
-                     if(proc->argv[1]==NULL || proc->argv[2]==NULL ){
-                          printf("provide 2 argument for export \n");
-                          return 1;
-                        }
-                        export(proc->argv[1], proc->argv[2], 1);
-
-                        return 1;
-
-
-                    }
-                      if (strcmp(proc->argv[0], "unsetVar") == 0)
-                    {
-                        if(proc->argv[1]==NULL){
-                          printf("provide an argument for unsetVar\n");
-                          return 1;
-                      }
-                        unsetVar(proc->argv[1]);
-
-
-                        return 1;
-
-
-                    }
-            if(strcmp("cd",proc->argv[0])==0)
-                    {
-
-                        cd(proc->argv[1],1);
-                        return 1;
-                    }
-
-
+      if (strcmp(proc->argv[0], "exit") == 0)
+            exit_shell(1,1);
+      if (strcmp(proc->argv[0], "echo") == 0){
+            if(proc->argv[1]==NULL){
+                printf("provide an argument for echo\n");
+                return 1;
             }
-    return 1;
+
+              echo(proc->argv[1]);
+              return 1;
+      }
+
+        if (strcmp(proc->argv[0], "export") == 0){
+        if(proc->argv[1]==NULL || proc->argv[2]==NULL ){
+            printf("provide 2 argument for export \n");
+            return 1;
+          }
+          export(proc->argv[1], proc->argv[2], 1);
+
+          return 1;
+      }
+      if (strcmp(proc->argv[0], "unsetVar") == 0){
+        if(proc->argv[1]==NULL){
+          printf("provide an argument for unsetVar\n");
+          return 1;
+      }
+        unsetVar(proc->argv[1]);
+        return 1;
+    }
+      if(strcmp("cd",proc->argv[0])==0){
+
+                  cd(proc->argv[1],1);
+                  return 1;
+      }
+  }
+      return 1;
 }
 
 /*
@@ -194,7 +179,6 @@ int export( char* var,  char* value, int fderr) {
 
  int echo( char* name){
 
-
     if(strcmp(name, "$$") == 0) {
             printf("%d\n", (int)getpid());
     } else if(strncmp(name, "$",1) == 0) {
@@ -205,8 +189,7 @@ int export( char* var,  char* value, int fderr) {
             printf("%s\n", name);
     }
 
-
-return 1 ;
+  return 1 ;
  }
 
 /*

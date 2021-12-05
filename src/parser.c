@@ -139,7 +139,7 @@ void print_array (char **strings) {
 int find_reserved_word ( char* tok)
  {
 
-for (int i = 0; i < sizeof tok; i++)
+  for (int i = 0; i < sizeof tok; i++)
    if(tok[i] == ';' || tok[i] == '&' || tok[i] == '<' || tok[i] == '>'
       || tok[i] == '-' || tok[i] == '|'   )
         return 1;

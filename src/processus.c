@@ -60,8 +60,6 @@ int init_process(process_t* proc) {
   proc->stdout = 1;
   proc->stderr =2 ;
 
-
-
   proc->next=NULL;
   proc->next_failure = NULL;
   proc->next_success = NULL ;
